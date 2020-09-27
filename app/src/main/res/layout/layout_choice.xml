@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/choiceSemesterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/questionChoiceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/choiceSemesterTextView"
+        app:layout_constraintStart_toStartOf="@+id/choiceSemesterTextView"
+        app:layout_constraintTop_toBottomOf="@+id/choiceSemesterTextView" />
+
+    <TextView
+        android:id="@+id/whatDoYouDoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="What do you do?"
+        app:layout_constraintEnd_toEndOf="@+id/questionChoiceTextView"
+        app:layout_constraintStart_toStartOf="@+id/questionChoiceTextView"
+        app:layout_constraintTop_toBottomOf="@+id/questionChoiceTextView" />
+
+    <RadioGroup
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/nextButtonChoice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/choiceOneRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+
+        <RadioButton
+            android:id="@+id/choiceTwoRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+
+        <RadioButton
+            android:id="@+id/choiceThreeRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+
+        <RadioButton
+            android:id="@+id/choiceFourRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextButtonChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

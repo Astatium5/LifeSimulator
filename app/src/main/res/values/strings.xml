@@ -1,0 +1,18 @@
+<resources>
+ <string name="app_name">College Life Simulator</string>
+
+<!-- Questions-->
+ <string-array name="questions">
+  <item></item>
+  <item>Your roommate has a lot of energy and loves to party</item>
+  <item></item>
+  <item></item>
+  <item></item>
+  <item></item>
+  <item></item>
+  <item></item>
+  <item></item>
+  <item></item>
+ </string-array>
+
+</resources>
